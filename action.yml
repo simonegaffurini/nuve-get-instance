@@ -1,0 +1,30 @@
+name: 'Nuve Platform Get instance'
+description: 'Get a Nuve Platform instance'
+author: 'Simone Gaffurini'
+branding:
+  icon: 'info'
+  color: 'blue'
+inputs:
+  email:
+    description: Nuve Platform email
+    required: true
+  password:
+    description: Nuve Platform password
+    required: true
+  instanceName:
+    description: Instance name
+    required: true
+outputs:
+  externalIp:
+    description: Instance external ID
+  systemId:
+    description: Instance System ID
+  systemNo:
+    description: Instance System Number
+  friendlyDomain:
+    description: Instance friendly domain
+  webDomain:
+    description: Instance web domain
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

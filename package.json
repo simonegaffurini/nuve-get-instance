@@ -1,0 +1,34 @@
+{
+  "name": "nuveplatform-get-instance",
+  "version": "1.0.0",
+  "description": "Nuve Platform get instance",
+  "scripts": {
+    "pack": "ncc build tsDist/index.js --license licenses.txt",
+    "build": "tsc && npm run pack"
+  },
+  "homepage": "https://github.com/simonegaffurini/nuveplatform-get-instance",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonegaffurini/nuveplatform-get-instance.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "author": {
+    "name": "Simone Gaffurini",
+    "email": "simone.gaffurini@regestaitalia.it"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^5.1.1",
+    "@octokit/core": "^5.0.1",
+    "axios": "^1.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.6",
+    "ncp": "^2.0.0"
+  }
+}
